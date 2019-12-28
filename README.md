@@ -53,3 +53,23 @@
 - belongs_to :user
 - belongs_to :group
 
+
+
+## groups_genresテーブル
+|Column  |Type   |Options|
+|--------|-------|-------|
+|group_id|integer|null: false, foreign_key: true|
+|genre_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :group
+- belongs_to :genre
+
+
+## genresテーブル
+|Column  |Type   |Options|
+|--------|-------|-------|
+|id      |integer|null: false, foreign_key: true|
+|name    |string |null:false|
+### Association
+- has_many :groups, through: :groups_genres
+- has_many :groups_genres
