@@ -12,7 +12,7 @@
 |email   |string |null: false|
 |password|string |null: false|
 ### Association
-- has_many :notes
+- has_many :notes, dependent: :destroy
 - has_many :groups, through: :users_groups
 - has_many :users_groups
 
