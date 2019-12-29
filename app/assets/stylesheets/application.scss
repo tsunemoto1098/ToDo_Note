@@ -1,4 +1,17 @@
 @import "reset";
-@import "notes";
 @import "font-awesome-sprockets";
 @import "./font-awesome";
+@import "notes";
+@import "header";
+@import "member";
+@import "group";
+@import "todo";
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Hiragino Mincho Pro';
+}
+.main{
+  display: flex;
+}

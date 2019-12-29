@@ -1,0 +1,32 @@
+.todo{
+  width: 75vw;
+  height: calc(100vh - 50px);
+  padding: 20px;
+  .todo_input{
+    background-color: #ccc;
+    margin-bottom:30px;
+    .todo_input_text{
+      
+      .todo_input_text_box{
+        width: 100%;
+        line-height: 40px;
+        font-size:20px;
+        outline: none;
+        
+      }
+      .todo_input_text_box:focus{
+        border-color: rgba(92, 92, 235, 0.534);
+      }  
+    }
+    .todo_input_menu{
+      display: flex;
+      height: 30px;
+      
+      .todo_input_menu_time{
+        .todo_input_menu_time_box{
+          
+        }
+      }
+    }
+  }
+}

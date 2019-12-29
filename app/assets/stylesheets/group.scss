@@ -1,0 +1,17 @@
+.group{
+  background-color:#eeeeee;
+  width: 15vw;
+  height: calc(100vh - 50px);
+  padding: 20px;
+  .group_top{
+    margin-bottom:20px;
+    
+    .group_top_name{
+      border-bottom:1px rgb(59, 59, 59) solid;
+    }
+  }
+  .group_list{
+
+  }
+
+}
