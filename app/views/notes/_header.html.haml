@@ -1,8 +1,11 @@
 .header
   .header_left
-    ToDo_Note
+    = link_to root_path, class: "header_left_title" do
+      ToDo_Note
   .header_center
     グループ名
   .header_right
-    %i.fas.fa-sign-in-alt
-    ログイン
+    = link_to edit_user_path(current_user), class: "header_right_edit" do
+      %i.fas.fa-users-cog
+        %span.fa-users-cog_text
+          設定
