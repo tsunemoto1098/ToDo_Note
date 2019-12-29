@@ -5,9 +5,13 @@
   padding: 20px;
   .group_top{
     margin-bottom:20px;
-    
     .group_top_name{
-      border-bottom:1px rgb(59, 59, 59) solid;
+      margin-bottom:20px;
+    }
+    .group_top_note{
+      .group_top_note_list{
+        border-bottom:1px rgb(59, 59, 59) solid;
+      }
     }
   }
   .group_list{
