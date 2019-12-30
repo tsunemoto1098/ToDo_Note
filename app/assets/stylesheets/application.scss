@@ -1,13 +1,12 @@
 @import "reset";
 @import "font-awesome-sprockets";
 @import "./font-awesome";
-@import "notes";
+@import "note";
 @import "header";
 @import "member";
-@import "group";
-@import "todo";
+@import "group_list";
 @import "user";
-
+@import "group";
 
 * {
   box-sizing: border-box;
