@@ -5,8 +5,14 @@
         = current_user.name
     .group_top_note
       %span.group_top_note_list
-        Note 一覧
-  .group_list
-    自分用
-  .group_list
-    友達
+        = link_to new_group_path, class: "group_top_note_list_link" do
+          新規Note
+  .group_room
+    - current_user.groups.each do |group|
+      = link_to "#", class: "group_room_list" do
+        .group_room_list_name
+          %span.group_room_list_name_text
+            = group.name
+        .group_room_list_note
+          %span.group_room_list_note_text
+            Noteはありません
