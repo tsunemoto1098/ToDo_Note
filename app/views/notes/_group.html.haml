@@ -7,12 +7,16 @@
       %span.group_top_note_list
         = link_to new_group_path, class: "group_top_note_list_link" do
           新規Note
+          %i.fas.fa-pencil-alt
   .group_room
     - current_user.groups.each do |group|
       = link_to group_notes_path(group), class: "group_room_list" do
         .group_room_list_name
           %span.group_room_list_name_text
+            %i.far.fa-star
             = group.name
         .group_room_list_note
+          %span.group_room_list_note_dot
+            ・
           %span.group_room_list_note_text
-            Noteはありません
+            = group.show_last_note

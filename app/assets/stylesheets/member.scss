@@ -2,6 +2,15 @@
   background-color:#eeeeee;
   width: 10vw;
   height: calc(100vh - 50px);
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
+  &_top{
+    margin-bottom:20px;
+    &_text{
+    border-bottom:1px black solid;
+    }
+  }
+  &_list{
+    font-size:12px;
+  }
 }

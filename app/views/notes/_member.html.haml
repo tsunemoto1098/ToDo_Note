@@ -1,3 +1,7 @@
 .member
-  .member_list
-    登録者一覧
+  .member_top
+    %span.member_top_text
+      共有メンバー
+  - @group.users.each do |u|
+    .member_list
+      = u.name

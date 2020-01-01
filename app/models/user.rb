@@ -6,4 +6,7 @@ class User < ApplicationRecord
   has_many :user_groups
   has_many :groups, through: :user_groups
   has_many :notes
+
+  validates :name,
+    length: { minimum: 1, maximum: 10 }
 end
