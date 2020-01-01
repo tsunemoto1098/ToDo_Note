@@ -1,4 +1,4 @@
-.todo{
+.note{
   width: 75vw;
   height: calc(100vh - 50px);
   padding: 20px;
@@ -25,4 +25,9 @@
       }
     }
   }
+}
+.not-note{
+  width: 75vw;
+  height: calc(100vh - 50px);
+  padding: 20px;
 }
