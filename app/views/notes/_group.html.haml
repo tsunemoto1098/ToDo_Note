@@ -9,7 +9,7 @@
           新規Note
   .group_room
     - current_user.groups.each do |group|
-      = link_to "#", class: "group_room_list" do
+      = link_to group_notes_path(group), class: "group_room_list" do
         .group_room_list_name
           %span.group_room_list_name_text
             = group.name
