@@ -28,8 +28,25 @@
   &_list{
     height: 647px;
     overflow: scroll;
+    position: relative;
     &_content{
-      
+      display:flex;
+      padding-bottom:10px;
+      margin-bottom:5px;
+      border-bottom:1px #ccc dashed;
+      &_left{
+        width: 800px;
+      }
+      &_right{
+        position: absolute;
+        right:0px;
+        &_name{
+          font-size:10px;
+        }
+        &_time{
+          font-size:10px;
+        }
+      }
     }
   }
 }
