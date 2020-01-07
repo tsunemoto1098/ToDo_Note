@@ -6,11 +6,11 @@
   &_top{
     margin-bottom:20px;
     &_name{
-      margin-bottom:20px;
+      margin-bottom:15px;
     }
     &_note{
+      margin-top:10px;
       &_list{
-        border-bottom:1px rgb(59, 59, 59) solid;
         &_link{
           color: white;
           background-color: rgb(112, 112, 253);
@@ -35,7 +35,7 @@
       &_note{
         font-size:12px;
         color:black;
-        margin-bottom:10px;
+        margin-bottom:15px;
         margin-left: 10px;
         &_dot{
           opacity:0.8;

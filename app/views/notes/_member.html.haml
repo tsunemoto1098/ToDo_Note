@@ -1,4 +1,9 @@
 .member
+  .member_note
+    %span.member_note_edit
+      = link_to edit_group_path(@group.id), class: "member_note_edit_link" do
+        Note編集
+        %i.fas.fa-pencil-alt
   .member_top
     %span.member_top_text
       共有メンバー
