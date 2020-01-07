@@ -3,16 +3,16 @@
     = form_for [@group, @note] do |f|
       .note_input_text
         = f.text_field :text, class: 'note_input_text_box', placeholder: 'メモを追加', autocomplete: "off"
+        .note_input_text_image
+          = f.label :image, class: 'note_input_text_image_box' do
+            %i.fas.fa-camera-retro
+            = f.file_field :image, class: 'hidden'
       .note_input_menu
         .note_input_menu_time
-          時間
           %input.note_input_menu_time_box{type: "time", step: "600"}/
-        .note_input_menu_image
-          = f.label :image, class: 'note_input_menu_image_box' do
-            画像
-            %i.far.fa-images
-            = f.file_field :image, class: 'hidden'
-        = f.submit '登録', class: 'note_submit'
+          -# = f.datetime_select :date
+        .note_input_menu_btn
+          = f.submit '登録', class: 'note_input_menu_btn_text'
     
   .note_list
     = render @notes
