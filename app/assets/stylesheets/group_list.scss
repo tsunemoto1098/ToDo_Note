@@ -26,24 +26,19 @@
       margin-bottom:10px;
       text-decoration: none;
       &_name{
-        font-size:16px;
+        font-size:18px;
         color:black;
         &_text{
           text-decoration: none;
+          .fa-star{
+            font-size:12px;
+          }
         }
       }
       &_note{
         font-size:12px;
         color:black;
         margin-bottom:15px;
-        margin-left: 10px;
-        &_dot{
-          opacity:0.8;
-        }
-        &_text{
-          opacity:0.8;
-          margin-left: -4px;
-        }
       }
     }
   }
