@@ -7,15 +7,18 @@
       = link_to "トップページに戻る", :back, class: 'btn'
     .account-page__inner--right.user-form
       = form_for(current_user) do |f|
-        .field
-          .field-label
-            = f.label "Name(10文字まで)"
-          .field-input
-            = f.text_field :name, autofocus: true
-        .field
-          .field-label
-            = f.label :email
-          .field-input
-            = f.email_field :email
-        .actions
-          = f.submit "更新", class: 'btn'
+        .account_content_main_form
+          .field
+            .field-input
+              = f.text_field :name, autofocus: true, placeholder: "name(10文字まで)", class: "field_input_text", autocomplete: "off"
+          .field
+            .field-input
+              = f.email_field :email, placeholder: "email", class: "field_input_text", autocomplete: "off"
+          .register_btn
+            = f.submit "更新", class: 'register_btn_text'
+          .login_switching_btn
+            = link_to destroy_user_session_path, method: :delete, class: 'login_switching_btn_text' do
+              ログアウト
+          .login_switching_btn
+            = link_to root_path, class: 'login_switching_btn_text' do
+              トップページに戻る
