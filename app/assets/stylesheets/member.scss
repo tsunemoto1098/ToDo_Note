@@ -2,8 +2,16 @@
   background-color:#eeeeee;
   width: 10vw;
   height: calc(100vh - 50px);
-  padding: 10px;
+  padding: 20px 10px;
   box-sizing: border-box;
+  &_note{
+    margin-bottom:15px;
+    &_edit{
+      &_link{
+        color: blue;
+      }
+    }
+  }
   &_top{
     margin-bottom:20px;
     &_text{

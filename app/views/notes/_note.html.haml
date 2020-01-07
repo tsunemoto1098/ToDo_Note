@@ -13,8 +13,6 @@
             %i.far.fa-images
             = f.file_field :image, class: 'hidden'
         = f.submit '登録', class: 'note_submit'
-    .member_group
-      = link_to "Note編集", edit_group_path(@group.id)
-
+    
   .note_list
     
