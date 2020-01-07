@@ -6,8 +6,8 @@
     .group_top_note
       %span.group_top_note_list
         = link_to new_group_path, class: "group_top_note_list_link" do
+          %i.fas.fa-plus-circle
           新規Note
-          %i.fas.fa-pencil-alt
   .group_room
     - current_user.groups.each do |group|
       = link_to group_notes_path(group), class: "group_room_list" do

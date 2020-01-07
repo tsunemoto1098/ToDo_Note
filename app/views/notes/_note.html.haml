@@ -2,7 +2,7 @@
   .note_input
     = form_for [@group, @note] do |f|
       .note_input_text
-        = f.text_field :text, class: 'note_input_text_box', placeholder: 'メモを追加'
+        = f.text_field :text, class: 'note_input_text_box', placeholder: 'メモを追加', autocomplete: "off"
       .note_input_menu
         .note_input_menu_time
           時間
