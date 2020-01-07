@@ -6,9 +6,9 @@ class Group < ApplicationRecord
 
   def show_last_note
     if (last_note = notes.last).present?
-      last_note.text? ? last_note.text : '画像があります'
+      last_note.text? ? last_note.text : '画像'
     else
-      '　　　'
+      'まだメモがありません'
     end
   end
 

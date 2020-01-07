@@ -25,6 +25,13 @@
       }
     }
   }
+  &_list{
+    height: 647px;
+    overflow: scroll;
+    &_content{
+      
+    }
+  }
 }
 .not-note{
   width: 85vw;
