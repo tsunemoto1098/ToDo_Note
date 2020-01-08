@@ -16,8 +16,12 @@
     .note_list_content_right_name_image
       = image_tag note.image.url if note.image.present?
   .note_list_content_right
-    .note_list_content_right_name
-      = "「" + note.user.name + "」の投稿"
-    .note_list_content_right_time
-      投稿時間:
-      = note.created_at.strftime("%Y/%m/%d %H:%M")
+    .note_list_content_right_left
+      .note_list_content_right_left_name
+        = "「" + note.user.name + "」の投稿"
+      .note_list_content_right_left_time
+        投稿時間:
+        = note.created_at.strftime("%Y/%m/%d %H:%M")
+    = link_to "notes/#{note.id}" , method: :delete, class: "note_list_content_right_right" do
+      .note_list_content_right_right_text
+        %i.fas.fa-trash-alt

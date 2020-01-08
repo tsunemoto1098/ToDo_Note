@@ -119,11 +119,23 @@
       &_right{
         position: absolute;
         right:0px;
-        &_name{
+        display: flex;
+        &_left{
+          margin-right:20px;
           font-size:10px;
+          &_name{
+          }
+          &_time{
+          }
         }
-        &_time{
-          font-size:10px;
+        &_right{
+          background-color: rgb(0, 89, 255);
+          border-radius: 4px;
+          padding:3px 5px 0px;
+          &_text{
+            text-decoration: none;
+            color:white;
+          }
         }
       }
     }
