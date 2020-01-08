@@ -3,7 +3,7 @@ class NotesController < ApplicationController
 
   def index
     @note = Note.new
-    @notes = @group.notes.includes(:user)
+    @notes = @group.notes.includes(:user).order("created_at DESC")
   end
 
   def create

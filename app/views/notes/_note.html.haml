@@ -5,7 +5,7 @@
         %span.note_list_content_left_text_date_date
           .note_list_content_left_text_date_date_text
             - if note.scheduled_date.present?
-              = note.scheduled_date.strftime("%Y/%m/%d")
+              = note.scheduled_date.strftime("%Y/%m/%d") + "　"
         .note_list_content_left_text_date_time
           %span.note_list_content_left_text_date_time_text
             - if note.scheduled_time.present?

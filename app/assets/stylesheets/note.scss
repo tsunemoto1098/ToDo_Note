@@ -81,14 +81,15 @@
         }
         &_text:hover{
           cursor: pointer;
-          background-color: rgb(60, 126, 226);
-          transition: all 3s;
+          background-color: rgb(89, 89, 255);
+          color:white;
+          transition: all 2s;
         }
       }
     }
   }
   &_list{
-    height: 647px;
+    height: 670px;
     overflow: scroll;
     position: relative;
     &::-webkit-scrollbar{
@@ -105,7 +106,6 @@
           &_date{
             display: flex;
             &_date{
-              padding-right:10px;
               &_text{
               }
             }
