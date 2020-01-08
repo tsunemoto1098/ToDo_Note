@@ -10,7 +10,7 @@
       float: left;
       position: relative;
       &_box{
-        width: 800px;
+        width: 630px;
         line-height: 40px;
         font-size:20px;
         outline: none;
@@ -34,15 +34,38 @@
     }
     &_menu{
       display: flex;
-      &_time{
+      &_date{
         &_box{
-          line-height: 38px;
-          margin-left:20px;
-          outline: none;
+          width:130px;
+          line-height: 40px;
+          margin-left:10px;
           padding:0px 10px;
+          outline: none;
+          &:focus{
+            border-color: rgba(92, 92, 235, 0.534);
+          }
+          &:hover{
+            cursor: pointer;
+          }
         }
-        &_box:focus{
-          border-color: rgba(92, 92, 235, 0.534);
+        &_time{
+          
+        }
+        #note_scheduled_time_4i,#note_scheduled_time_5i{
+          width:50px;
+          height: 40px;
+          outline: none;
+          background-color: white;
+          border-color: #ccc;
+          &:focus{
+            border-color: rgba(92, 92, 235, 0.534);
+          }
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        #note_scheduled_time_4i{
+          margin-left:10px;
         }
       }
       &_btn{
@@ -54,7 +77,7 @@
           border-style: none;
           border-radius: 5px;
           box-shadow: 0px 0px 7px blue;
-          margin-left:20px;
+          margin-left:35px;
         }
         &_text:hover{
           cursor: pointer;
@@ -78,6 +101,20 @@
       border-bottom:1px #ccc dashed;
       &_left{
         width: 800px;
+        &_text{
+          &_date{
+            display: flex;
+            &_date{
+              padding-right:10px;
+              &_text{
+              }
+            }
+            &_time{
+              &_text{
+              }
+            }
+          }
+        }
       }
       &_right{
         position: absolute;
