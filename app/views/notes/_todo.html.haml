@@ -8,9 +8,9 @@
             %i.fas.fa-camera-retro
             = f.file_field :image, class: 'hidden'
       .note_input_menu
-        .note_input_menu_time
-          %input.note_input_menu_time_box{type: "time", step: "600"}/
-          -# = f.datetime_select :date
+        .note_input_menu_date
+          = f.text_field :scheduled_date, id: "datepicker", autocomplete: "off", placeholder: '日にちを選択', class: "note_input_menu_date_box"
+          = f.time_select :scheduled_time, prompt:true, prompt: "---", class: "note_input_menu_date_time"
         .note_input_menu_btn
           = f.submit '登録', class: 'note_input_menu_btn_text'
     
