@@ -3,7 +3,7 @@
   height: calc(100vh - 50px);
   padding: 20px;
   &_input{
-    margin-bottom:15px;
+    margin-bottom:5px;
     padding-bottom:15px;
     border-bottom:2px #ccc dashed;
     &_text{
@@ -24,7 +24,8 @@
         top:10px;
         right:15px;
         &_box{
-          .fa-images{
+          .fa-camera-retro{
+            cursor: pointer;
           }
           .hidden{
             display: none;
@@ -70,20 +71,24 @@
       }
       &_btn{
         &_text{
-          width: 100px;
-          height: 44px;
-          font-size:16px;
-          padding:10px 10px;
-          border-style: none;
-          border-radius: 5px;
-          box-shadow: 0px 0px 7px blue;
+          display: inline-block;
+          text-align: left;
+          border: 2px solid #9193ff;
+          font-size: 16px;
+          color: #9193ff;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 12px 27px;
+          border-radius: 4px;
+          transition: .4s;
+          letter-spacing: 6px;
           margin-left:35px;
         }
         &_text:hover{
           cursor: pointer;
-          background-color: rgb(89, 89, 255);
-          color:white;
-          transition: all 2s;
+          background-color: #9193ff;
+          border-color: #9193ff;
+          color: #FFF;
         }
       }
     }
@@ -123,6 +128,7 @@
         &_left{
           margin-right:20px;
           font-size:10px;
+          color:gray;
           &_name{
           }
           &_time{
@@ -132,7 +138,7 @@
           background-color: rgb(0, 89, 255);
           border-radius: 4px;
           padding:3px 5px 0px;
-          &_text{
+          &_delete{
             text-decoration: none;
             color:white;
           }
