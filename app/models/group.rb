@@ -1,7 +1,7 @@
 class Group < ApplicationRecord
   has_many :user_groups
   has_many :users, through: :user_groups
-  has_many :notes
+  has_many :notes, dependent: :destroy
   validates :name, presence: true, uniqueness: true
 
   def show_last_note
