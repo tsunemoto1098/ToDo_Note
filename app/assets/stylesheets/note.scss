@@ -83,6 +83,7 @@
           transition: .4s;
           letter-spacing: 6px;
           margin-left:35px;
+          outline: none;
         }
         &_text:hover{
           cursor: pointer;
@@ -97,6 +98,7 @@
     height: 670px;
     overflow: scroll;
     position: relative;
+    height: calc(100vh - 50px - 90px);
     &::-webkit-scrollbar{
       display:none;
     }

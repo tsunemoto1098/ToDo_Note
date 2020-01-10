@@ -1,107 +1,78 @@
-h1 {
-  letter-spacing: 2px;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-}
-h2 {
-  margin-bottom: 10px;
-  color: #f05050;
-  font-size: 14px;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-li {
-  margin: 0;
-  padding: 0;
-  font-size: 13px;
-}
-
-
-
-.chat-group-form {
-  width: 980px;
-  margin: 60px auto;
-  padding: 40px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-sizing: border-box;
-  &__errors {
-    margin: 30px 0;
-    padding: 20px 40px;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    text-align: center;
-  }
-  &__label {
-    display: block;
-    line-height: 50px;
-    font-weight: bold;
-    text-align: right;
-  }
-  &__input {
-    float: left;
-    width: 100%;
-    line-height: 30px;
-    padding: 10px 15px;
-    box-sizing: border-box;
-  }
-  &__action-btn {
-    display: inline-block;
-    padding: 12px 20px;
-    color: #fff;
-    background-color: #38aef0;
-    border: 0;
-  }
-  &__field {
-    margin-top: 30px;
-    &:after {
-      content: "";
-      clear: both;
-      display: block;
+.note_group{
+  width: 100%;
+  height: 100vh;
+  background:radial-gradient(white, rgb(123, 133, 179));
+  &_content{
+    width: 800px;
+    height: 600px;
+    margin:0 auto;
+    padding-top:150px;
+    &_title{
+      font-size:25px;
+      text-align: center;
     }
-    &--left {
-      float: left;
-      width: 30%;
-      padding-right: 20px;
-      padding-left: 20px;
-      box-sizing: border-box;
+    &_name{
+      font-size:20px;
+      margin:30px auto;
+      text-align: center;
+      color:#5f5f5f;
     }
-    &--right {
-      float: right;
-      width: 70%;
+    &_error{
+      text-align: center;
+      margin-bottom:25px;
+      li{
+        color: red;
+      }
     }
-  }
-}
+    &_field{
+      padding:0px 250px;
+      &_name{
+        text-align: center;
+        &_input{
+          height: 50px;
+          width: 300px;
+          border-radius: 4px;
+          font-size:14px;
+          padding-left:10px;
+          outline: none;
+          border:2px #f0f0f0 solid;
+          margin-bottom:25px;
+          &:focus{
+            border-color: rgba(51, 51, 187, 0.534);
+          }
+        }
+      }
+      &_member{
+        margin-bottom:25px;
+        &_label{
+          margin-bottom:5px;
+        }
+        &_check{
 
-.chat-group-user {
-  padding: 0 15px;
-  line-height: 50px;
-  font-size: 14px;
-  border-bottom: 1px solid #ddd;
-  &:after {
-    content: "";
-    clear: both;
-    display: block;
-  }
-  &__name {
-    float: left;
-  }
-  &__btn {
-    float: right;
-    display: inline-block;
-    cursor: pointer;
-    &--add {
-      color: #38aef0;
-    }
-    &--remove {
-      color: #f05050;
+        }
+      }
+      &_btn{
+        text-align: center;
+        &_text{
+          width: 300px;
+          height: 40px;
+          font-size:16px;
+          padding:10px 10px;
+          border-style: none;
+          border-radius: 5px;
+          box-shadow: 0px 0px 3px gray;
+          margin-top:15px;
+          transition: all .8s;
+          outline: none;
+          &:hover{
+            cursor: pointer;
+            background-color: rgb(165, 198, 248);
+          }
+          &:focus{
+            border-color: rgba(51, 51, 187, 0.534);
+          }
+        }
+      }
     }
   }
 }

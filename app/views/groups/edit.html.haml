@@ -1,3 +1,7 @@
-.chat-group-form
-  %h1 Note編集
-  = render partial: "form", locals: { group: @group }
+.note_group
+  .note_group_content
+    .note_group_content_title
+      ToDo_Note
+    .note_group_content_name
+      Note編集
+    = render partial: "form", locals: { group: @group }
