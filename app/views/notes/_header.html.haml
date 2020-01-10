@@ -7,6 +7,6 @@
       = "『" + @group.name + "』" + "ノート"
   .header_right
     = link_to edit_user_path(current_user), class: "header_right_edit" do
-      %i.fas.fa-users-cog
-        %span.fa-users-cog_text
-          user設定
+      %i.fas.fa-user-cog
+        %span.fa-user-cog_text
+          = current_user.name
