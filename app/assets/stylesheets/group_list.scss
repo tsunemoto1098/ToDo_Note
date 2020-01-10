@@ -5,11 +5,7 @@
   padding: 20px;
   &_top{
     margin-bottom:20px;
-    &_name{
-      margin-bottom:15px;
-    }
     &_note{
-      margin-top:10px;
       &_list{
         &_link{
           color: white;
@@ -25,20 +21,26 @@
     &_list{
       margin-bottom:10px;
       text-decoration: none;
-      &_name{
-        font-size:16px;
-        color:black;
-        &_text{
-          text-decoration: none;
-          .fa-star{
-            font-size:12px;
+      &_content{
+        border-left:3px rgb(181, 181, 255) solid;
+        border-right:3px rgb(181, 181, 255) solid;
+        &_name{
+          font-size:16px;
+          color:black;
+          margin-left:5px;
+          &_text{
+            text-decoration: none;
+            .fa-star{
+              font-size:12px;
+            }
           }
         }
-      }
-      &_note{
-        font-size:12px;
-        color:black;
-        margin-bottom:15px;
+        &_note{
+          font-size:12px;
+          color:black;
+          margin-bottom:15px;
+          margin-left:5px;
+        }
       }
     }
   }

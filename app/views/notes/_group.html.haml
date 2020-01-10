@@ -1,8 +1,5 @@
 .group
   .group_top
-    .group_top_name
-      %span
-        = current_user.name
     .group_top_note
       %span.group_top_note_list
         = link_to new_group_path, class: "group_top_note_list_link" do
@@ -11,9 +8,10 @@
   .group_room
     - current_user.groups.each do |group|
       = link_to group_notes_path(group), class: "group_room_list" do
-        .group_room_list_name
-          %span.group_room_list_name_text
-            %i.far.fa-star
-            = group.name
-        .group_room_list_note
-          = group.show_last_note
+        .group_room_list_content
+          .group_room_list_content_name
+            %span.group_room_list_content_name_text
+              %i.far.fa-star
+              = group.name
+          .group_room_list_content_note
+            = group.show_last_note

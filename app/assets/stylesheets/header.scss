@@ -12,6 +12,7 @@
     &_title{
       text-decoration: none;
       color:black;
+      padding:5px 0px 8px;
     }
   }
   &_center{
@@ -27,12 +28,7 @@
     line-height: 30px;
     &_edit{
       color: black;
-      font-family: 'Hiragino Mincho Pro';
-      .fas.fa-users-cog{
-        &_text{
-          font-family: 'Hiragino Mincho Pro';
-        }
-      }
+      padding:5px 0px 8px;
     }
   }
 }
