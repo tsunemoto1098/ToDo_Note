@@ -1,6 +1,6 @@
 .account{
   background:radial-gradient(white, rgb(168, 168, 168));
-  height: 822px;
+  height: 100vh;
   &_content{
     height: 600px;
     width: 800px;
@@ -31,9 +31,9 @@
               padding-left:10px;
               outline: none;
               border:2px #f0f0f0 solid;
-            }
-            &_text:focus{
-              border-color: rgba(51, 51, 187, 0.534);
+              &:focus{
+                border-color: rgba(51, 51, 187, 0.534);
+              }
             }
           }
         }
@@ -47,11 +47,15 @@
             border-radius: 5px;
             box-shadow: 0px 0px 3px gray;
             margin-top:15px;
-          }
-          &_text:hover{
-            cursor: pointer;
-            background-color: rgb(165, 198, 248);
             transition: all .8s;
+            outline: none;
+            &:hover{
+              cursor: pointer;
+              background-color: rgb(165, 198, 248);
+            }
+            &:focus{
+              border-color: rgba(51, 51, 187, 0.534);
+            }
           }
         }
       }

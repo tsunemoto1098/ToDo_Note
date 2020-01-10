@@ -1,24 +1,17 @@
 = form_for @group do |f|
   - if @group.errors.any?
-    .chat-group-form__errors
+    .note_group_content_error
       %h2= "#{@group.errors.full_messages.count}件のエラーが発生しました。"
       %ul
         - @group.errors.full_messages.each do |message|
           %li= message
-  .chat-group-form__field
-    .chat-group-form__field--left
-      = f.label :name, "ノート名", class: 'chat-group-form__label'
-    .chat-group-form__field--right
-      = f.text_field :name, class: 'chat__group_name chat-group-form__input', placeholder: 'グループ名を入力してください'
-  .chat-group-form__field.clearfix
-    / この部分はインクリメンタルサーチ（ユーザー追加の非同期化)のときに使用します
-  .chat-group-form__field.clearfix
-    .chat-group-form__field--left
-      = f.label "メンバー", class: "chat-group-form__label"
-    .chat-group-form__field--right
-      = f.collection_check_boxes :user_ids, User.all, :id, :name
-      / この部分はインクリメンタルサーチ（ユーザー追加の非同期化)のときにも使用します
-  .chat-group-form__field.clearfix
-    .chat-group-form__field--left
-    .chat-group-form__field--right
-      = f.submit class: 'chat-group-form__action-btn'
+  .note_group_content_field
+    .note_group_content_field_name
+      = f.text_field :name, class: 'note_group_content_field_name_input', placeholder: 'ノート名を入力', autocomplete: "off"
+    .note_group_content_field_member
+      .note_group_content_field_member_label
+        = f.label "追加メンバー"
+      .note_group_content_field_member_check
+        = f.collection_check_boxes :user_ids, User.all, :id, :name
+    .note_group_content_field_btn
+      = f.submit "登録", class: 'note_group_content_field_btn_text'
