@@ -26,18 +26,22 @@
     &_field{
       padding:0px 250px;
       &_name{
-        text-align: center;
+        &_label{
+        }
         &_input{
-          height: 50px;
-          width: 300px;
-          border-radius: 4px;
-          font-size:14px;
-          padding-left:10px;
-          outline: none;
-          border:2px #f0f0f0 solid;
-          margin-bottom:25px;
-          &:focus{
-            border-color: rgba(51, 51, 187, 0.534);
+          text-align: center;
+          &_text{
+            height: 50px;
+            width: 300px;
+            border-radius: 4px;
+            font-size:14px;
+            padding-left:10px;
+            outline: none;
+            border:2px #f0f0f0 solid;
+            margin-bottom:25px;
+            &:focus{
+              border-color: rgba(51, 51, 187, 0.534);
+            }
           }
         }
       }
