@@ -1,14 +1,15 @@
-.member
-  .member_note
-    %span.member_note_edit
-      = link_to edit_group_path(@group.id), class: "member_note_edit_link" do
-        Note編集
-        %i.fas.fa-pencil-alt
-    = link_to "/groups/:group.id" , method: :delete do
+.option
+  = link_to edit_group_path(@group.id), class: "option_note_edit" do
+    .option_note_edit_text
+      %i.fas.fa-pencil-alt
+      Note編集
+  = link_to "/groups/:group.id" , method: :delete, class: "option_note_edit" do
+    .option_note_edit_text
+      %i.fas.fa-eraser
       Note削除
-  .member_top
-    %span.member_top_text
+  .option_top
+    %span.option_top_text
       共有メンバー
   - @group.users.each do |u|
-    .member_list
+    .option_list
       = u.name
