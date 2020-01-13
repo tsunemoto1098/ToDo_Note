@@ -46,7 +46,7 @@ $bg-height: 50px;
 @keyframes         bg-scrolling {
   0% { background-position: $bg-width $bg-height; }
 }
-.not-note,.note_group,.account {
+.note_group,.account {
   font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
   background: url($bg-url) repeat 0 0;
   -webkit-animation: bg-scrolling-reverse .92s infinite; /* Safari 4+ */
