@@ -60,7 +60,7 @@
           background-color: white;
           border-color: #ccc;
           &:focus{
-            border-color: rgba(92, 92, 235, 0.534);
+            border:2px rgba(92, 92, 235, 0.534) solid;
           }
           &:hover{
             cursor: pointer;
