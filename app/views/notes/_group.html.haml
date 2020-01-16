@@ -15,9 +15,3 @@
               = group.name
           .group_room_list_content_note
             = group.show_last_note
-
-  = audio_tag 'everyday.mp3'
-  :javascript
-    audiojs.events.ready(function() {
-      var as = audiojs.createAll();
-    });

@@ -1,0 +1,27 @@
+.audio{
+  position: fixed;
+  bottom:0px;
+  right:0px;
+  .audiojs{
+    .play-pause{
+      .play{
+      }
+      .loading{
+      }
+    }
+    .scrubber{
+      .progress{
+        .loaded{
+        }
+      }
+    }
+    .time{
+      .played{
+      }
+      .duration{
+      }
+    }
+  }
+}
+
+
