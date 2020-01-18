@@ -10,7 +10,7 @@
       .note_input_menu
         .note_input_menu_date
           = f.text_field :scheduled_date, id: "datepicker", autocomplete: "off", placeholder: '日にちを選択', class: "note_input_menu_date_box"
-          = f.time_select :scheduled_time, prompt:true, prompt: "---", class: "note_input_menu_date_time", minute_step: 10
+          = f.time_select :scheduled_time, prompt: "---", class: "note_input_menu_date_time", minute_step: 10
         .note_input_menu_btn
           = f.submit '登録', class: 'note_input_menu_btn_text'
   .note_list
