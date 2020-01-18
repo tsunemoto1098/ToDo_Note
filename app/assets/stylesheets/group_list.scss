@@ -30,6 +30,11 @@
     }
   }
   &_room{
+    height: calc(100vh - 50px - 80px);
+    overflow: scroll;
+    &::-webkit-scrollbar{
+      display:none;
+    }
     &_list{
       margin-bottom:10px;
       text-decoration: none;
