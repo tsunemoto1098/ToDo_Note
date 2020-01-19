@@ -25,7 +25,7 @@ class NotesController < ApplicationController
   private
 
   def note_params
-    params.require(:note).permit(:text, :image, :scheduled_date, :scheduled_time).merge(user_id: current_user.id)
+    params.require(:note).permit(:text, :image, :scheduled_date, :scheduled_time, :scheduled_minute).merge(user_id: current_user.id)
   end
 
   def set_group
