@@ -29,11 +29,11 @@
   }
   &_member{
     margin:20px 0 10px 0;
-    &_text{
-    border-bottom:1px black solid;
+    &_top{
+      margin-bottom:5px;
     }
-  }
-  &_list{
-    font-size:12px;
+    &_name{
+      font-size: 12px;
+    }
   }
 }
