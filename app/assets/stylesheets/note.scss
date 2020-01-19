@@ -40,7 +40,7 @@
       display: flex;
       &_date{
         &_box{
-          width: 8.5vw;
+          width: 8vw;
           line-height: 40px;
           margin-left:10px;
           padding:0px 10px;
@@ -52,11 +52,11 @@
             cursor: pointer;
           }
         }
-        &_time{
-        }
-        #note_scheduled_time_4i,#note_scheduled_time_5i{
-          width:3vw;
-          height: 40px;
+      }
+      &_time{
+        &_time,&_minute{
+          width:4vw;
+          height: 44px;
           outline: none;
           background-color: white;
           border-color: #ccc;
@@ -67,8 +67,12 @@
             cursor: pointer;
           }
         }
-        #note_scheduled_time_4i{
-          margin-left:10px;
+        &_time{
+          margin-left:0.5vw;
+          margin-right:-7px;
+        }
+        &_minute{
+          margin-left:-7px;
         }
       }
       &_btn{
@@ -86,7 +90,7 @@
           border-radius: 4px;
           transition: .4s;
           letter-spacing: 6px;
-          margin-left:2vw;
+          margin-left:1.5vw;
           outline: none;
         }
         &_text:hover{
