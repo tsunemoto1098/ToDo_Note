@@ -3,7 +3,7 @@
     .option_note_edit_text
       %i.fas.fa-pencil-alt
       Note編集
-  = link_to "groups/id" , method: :delete, class: "option_note_edit" do
+  = link_to group_path(@group.id) , method: :delete, class: "option_note_edit" do
     .option_note_edit_text
       %i.fas.fa-eraser
       Note削除
