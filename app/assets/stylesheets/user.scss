@@ -60,17 +60,27 @@
             }
           }
         }
+        .login_switching_btn{
+          margin-top:20px;
+          width: 300px;
+          &_text{
+            text-decoration: none;
+            margin-top:20px;
+            color:blue;
+            font-size:16px;
+          }
+        }
       }
     }
   }
 }
-.login_switching_btn{
-  margin-top:20px;
-  width: 300px;
-  &_text{
-    text-decoration: none;
-    margin-top:20px;
-    color:blue;
-    font-size:16px;
+#new_user{
+  #error_explanation{
+    font-size:14px;
+    margin-bottom:15px;
+    color:red;
+    & h2{
+      font-size:16px;
+    }
   }
 }
