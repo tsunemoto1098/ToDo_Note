@@ -127,6 +127,11 @@
             }
             &_time{
               &_text{
+                .time_display{
+                  &_text{
+                    margin-left:-5px;
+                  }
+                }
               }
             }
           }

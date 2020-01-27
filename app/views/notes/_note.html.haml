@@ -9,11 +9,15 @@
         .note_list_content_left_text_date_time
           %span.note_list_content_left_text_date_time_text
             - if note.scheduled_time.present?
-              = note.scheduled_time
-              時
+              %span.time_display
+                = note.scheduled_time
+                %span.time_display_text
+                  時
             - if note.scheduled_minute.present?
-              = note.scheduled_minute
-              分
+              %span.time_display
+                = note.scheduled_minute
+                %span.time_display_text
+                  分
       .note_list_content_left_text_text
         - if note.text.present?
           = note.text
