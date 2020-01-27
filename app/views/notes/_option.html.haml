@@ -12,4 +12,5 @@
       共有メンバー
     .option_member_name
       - @group.users.each do |u|
-        = u.name
+        %span
+          = "・" + u.name

@@ -30,6 +30,7 @@
       .note_list_content_right_left_time
         投稿時間:
         = note.created_at.strftime("%Y/%m/%d %H:%M")
-    = link_to "notes/#{note.id}" , method: :delete, class: "note_list_content_right_right" do
-      .note_list_content_right_right_delete
-        %i.fas.fa-trash-alt
+    - if current_user.id == note.user_id
+      = link_to "notes/#{note.id}" , method: :delete, class: "note_list_content_right_right" do
+        .note_list_content_right_right_delete
+          %i.fas.fa-trash-alt
