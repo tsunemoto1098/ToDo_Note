@@ -4,7 +4,7 @@ class Group < ApplicationRecord
   has_many :notes, dependent: :destroy
 
   validates :name, presence: true, uniqueness: true
-  validates :name,length: { minimum: 1, maximum: 10 }
+  validates :name, length: { minimum: 1, maximum: 10 }
 
   def show_last_note
     if (last_note = notes.last).present?

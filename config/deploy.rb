@@ -6,7 +6,7 @@ lock '3.11.2'
 set :application, 'ToDo_Note'
 
 # どのリポジトリからアプリをpullするかを指定する
-set :repo_url,  'git@github.com:tsunemoto1098/ToDo_Note.git'
+set :repo_url, 'git@github.com:tsunemoto1098/ToDo_Note.git'
 
 # バージョンが変わっても共通で参照するディレクトリを指定
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
@@ -32,7 +32,7 @@ set :default_env, {
   AWS_SECRET_ACCESS_KEY: ENV["AWS_SECRET_ACCESS_KEY"]
 }
 
-set :linked_files, %w{ config/secrets.yml }
+set :linked_files, %w{config/secrets.yml}
 
 # デプロイ処理が終わった後、Unicornを再起動するための記述
 after 'deploy:publishing', 'deploy:restart'
