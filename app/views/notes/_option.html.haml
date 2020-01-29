@@ -1,12 +1,14 @@
 .option
-  = link_to edit_group_path(@group.id), class: "option_note_edit" do
-    .option_note_edit_text
-      %i.fas.fa-pencil-alt
-      Note編集
-  = link_to group_path(@group.id) , method: :delete, class: "option_note_edit", data: { confirm: 'このノートを削除します。よろしいですか？' } do
-    .option_note_edit_text
-      %i.fas.fa-eraser
-      Note削除
+  .option_edit
+    - if current_user.id == @group.created_by
+      = link_to edit_group_path(@group.id), class: "option_edit_note" do
+        .option_edit_note_text
+          %i.fas.fa-pencil-alt
+          Note編集
+      = link_to group_path(@group.id) , method: :delete, class: "option_edit_note", data: { confirm: 'このノートを削除します。よろしいですか？' } do
+        .option_edit_note_text
+          %i.fas.fa-eraser
+          Note削除
   .option_member
     .option_member_create
       Note作成者

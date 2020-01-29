@@ -12,23 +12,23 @@
 	background-size: 20px 20px;
   background-position: 0 0, 10px 10px;
   border-left:1px #ccc solid;
-  &_note_edit{
-    margin-bottom:15px;
-    text-decoration: none;
-    &_text{
-      color: white;
-      background-color: rgb(112, 112, 253);
-      padding:5px 5px 5px 0px;
-      margin-bottom:10px;
-      border-radius: 2px;
-      text-align: center;
-      &:hover{
-        opacity: 0.8;
+  &_edit{
+    &_note{
+      text-decoration: none;
+      &_text{
+        color: white;
+        background-color: rgb(112, 112, 253);
+        padding:5px 5px 5px 0px;
+        margin-bottom:10px;
+        border-radius: 2px;
+        text-align: center;
+        &:hover{
+          opacity: 0.8;
+        }
       }
     }
   }
   &_member{
-    margin:20px 0 10px 0;
     &_create{
       &_name{
         margin-bottom:10px;
