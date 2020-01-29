@@ -212,6 +212,8 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    record_with_operator (1.0.1)
+      activerecord
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
@@ -305,6 +307,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 3.0)
   rails (~> 5.0.7, >= 5.0.7.2)
+  record_with_operator
   rubocop
   sass-rails (~> 5.0)
   spring
