@@ -79,3 +79,5 @@ gem 'capistrano-rails'
 gem 'capistrano3-unicorn'
 
 gem 'audiojs-rails'
+
+gem 'record_with_operator'

@@ -8,6 +8,13 @@
       %i.fas.fa-eraser
       Note削除
   .option_member
+    .option_member_create
+      Note作成者
+      .option_member_create_name
+        - aaa = Group.find(params[:group_id])
+        - bbb = aaa.created_by
+        - ccc = User.find(bbb)
+        = "・" + ccc.name
     .option_member_top
       共有メンバー
     .option_member_name

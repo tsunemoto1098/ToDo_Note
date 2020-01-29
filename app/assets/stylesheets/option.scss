@@ -29,6 +29,12 @@
   }
   &_member{
     margin:20px 0 10px 0;
+    &_create{
+      &_name{
+        margin-bottom:10px;
+        font-size: 12px;
+      }
+    }
     &_top{
       margin-bottom:5px;
     }
