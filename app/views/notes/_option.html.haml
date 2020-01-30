@@ -13,8 +13,8 @@
     .option_member_create
       Note作成者
       .option_member_create_name
-        - group_created_by = Group.find(params[:group_id]).created_by
-        - group_create_name = User.find(group_created_by).name
+        - group_create_id = Group.find(params[:group_id]).created_by
+        - group_create_name = User.find(group_create_id).name
         = "・" + group_create_name
     .option_member_top
       共有メンバー
