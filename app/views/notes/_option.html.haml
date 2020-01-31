@@ -9,6 +9,11 @@
         .option_edit_note_text
           %i.fas.fa-eraser
           Note削除
+    - if current_user.id != @group.created_by
+      .option_edit_other
+        .option_edit_other_text
+          %i.fas.fa-user-lock
+          Note編集・削除は作成者のみ可能です
   .option_member
     .option_member_create
       Note作成者
