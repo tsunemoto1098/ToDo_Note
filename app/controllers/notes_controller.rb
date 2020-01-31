@@ -30,6 +30,8 @@ class NotesController < ApplicationController
 
   def set_group
     @group = Group.find(params[:group_id])
+    @group_create_id = Group.find(params[:group_id]).created_by
+    @group_create_name = User.find(@group_create_id).name
   end
 
 end
