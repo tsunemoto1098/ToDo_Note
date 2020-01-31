@@ -3,7 +3,7 @@ class Group < ApplicationRecord
   has_many :users, through: :user_groups
   has_many :notes, dependent: :destroy
 
-  validates :name, presence: true, uniqueness: true
+  validates :name, presence: true, uniqueness: false
   validates :name, length: { minimum: 1, maximum: 10 }
 
   records_with_operator_on :create, :update
