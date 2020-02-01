@@ -1,15 +1,13 @@
 .audio{
   position: fixed;
   bottom:10px;
-  left:300px;
+  left:18vw;
   height: 22px;
-  width: 700px;
-  color: #222;
+  width: 65vw;
   .audiojs{
     height: 22px;
-    background: gray;
-    width: 700px;
-    border-radius: 4px;
+    background: rgb(180, 180, 180);
+    width: 65vw;
     .play-pause{
       width: 25px;
       height: 22px;
@@ -18,18 +16,37 @@
       & p{
         height: 22px;
         position: absolute;
-        top:-2px;
+      }
+      .play{
+        background: url(play.svg) center center no-repeat;
+        background-size:12px;
+      }
+      .pause{
+        background: url(pause.svg) center center no-repeat;
+        background-size:12px;
+      }
+      .loading{
+        background: url(loading.svg) center center no-repeat;
+        background-size:14px;
+        animation: r1 1s linear infinite;
+      }
+      @keyframes r1 {
+        0%   { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .error{
+        background: url(error.svg) center center no-repeat;
       }
     }
     .scrubber{
       background: #5a5a5a;
-      width: 550px;
+      width: 52vw;
       height: 10px;
       margin: 6px;
       .progress{
         height: 10px;
         width: 0px;
-        background: #ccc;
+        background: rgb(98, 140, 255);
       }
       .loaded{
         height: 10px;
@@ -42,9 +59,12 @@
       height: 22px;
       line-height: 22px;
       padding:0px 0px 0px 15px;
+      color:black;
       .played{
+        color:black;
       }
       .duration{
+        color:black;
       }
     }
     .error-message{
