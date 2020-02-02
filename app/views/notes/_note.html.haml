@@ -26,9 +26,8 @@
   .note_list_content_right
     .note_list_content_right_left
       .note_list_content_right_left_name
-        = "「" + note.user.name + "」の投稿"
+        = note.user.name
       .note_list_content_right_left_time
-        投稿時間:
         = note.created_at.strftime("%Y/%m/%d %H:%M")
     - if current_user.id == note.user_id
       = link_to "notes/#{note.id}" , method: :delete, class: "note_list_content_right_right" do
