@@ -20,15 +20,15 @@
         position: absolute;
       }
       .play{
-        background: url(play.svg) center center no-repeat;
+        background: image-url(play) center center no-repeat;
         background-size:12px;
       }
       .pause{
-        background: url(pause.svg) center center no-repeat;
+        background: image-url(pause) center center no-repeat;
         background-size:12px;
       }
       .loading{
-        background: url(loading.svg) center center no-repeat;
+        background: image-url(loading) center center no-repeat;
         background-size:14px;
         animation: r1 1s linear infinite;
       }
@@ -37,7 +37,7 @@
         100% { transform: rotate(360deg); }
       }
       .error{
-        background: url(error.svg) center center no-repeat;
+        background: image-url(error) center center no-repeat;
         background-size:12px;
       }
     }
