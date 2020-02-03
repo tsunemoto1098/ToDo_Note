@@ -12,7 +12,7 @@
     border-bottom: 1px #ccc solid;
     background-color: #ffffff;
     background-image: repeating-linear-gradient(35deg,
-    #e7e7e7, #e7e7e7 3px,transparent 0, transparent 7px);
+    #f3f3f3, #f3f3f3 3px,transparent 0, transparent 7px);
     .play-pause{
       width: 35px;
       height: 35px;
@@ -58,7 +58,7 @@
         width: 0px;
         background-color: #7388ff;
         background-image: repeating-linear-gradient(35deg,
-        #e7e7e7, #e7e7e7 3px,transparent 0, transparent 7px);
+        #f3f3f3, #f3f3f3 3px,transparent 0, transparent 7px);
       }
       .loaded{
         height: 18px;
@@ -70,7 +70,7 @@
       float: left;
       height: 35px;
       line-height: 35px;
-      padding:0px 0px 0px 15px;
+      padding-left:1vw;
       color:black;
       text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff;
       font-size:14px;
