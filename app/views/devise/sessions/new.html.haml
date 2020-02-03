@@ -11,7 +11,7 @@
               = f.email_field :email, autofocus: true, placeholder: "email", class: "field_input_text", autocomplete: "off"
           .field
             .field_input
-              = f.password_field :password, autocomplete: "off", placeholder: "password(英数字8文字以上)", class: "field_input_text"
+              = f.password_field :password, autocomplete: "off", placeholder: "password(英数字6文字以上)", class: "field_input_text"
           .register_btn
             = f.submit "ログイン", class: 'register_btn_text'
           = render "devise/shared/links"
