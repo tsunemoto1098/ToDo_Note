@@ -1,22 +1,27 @@
 .audio{
   position: fixed;
-  bottom:7px;
+  bottom:4px;
   left:15vw;
-  height: 30px;
+  height: 35px;
   width: 75vw;
   .audiojs{
-    height: 30px;
-    background: rgb(180, 180, 180);
+    height: 35px;
     width: 75vw;
     box-shadow:0px 0px 0px #000000;
+    border-top: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+    background-color: #ffffff;
+    background-image: repeating-linear-gradient(35deg,
+    #e7e7e7, #e7e7e7 3px,transparent 0, transparent 7px);
     .play-pause{
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 35px;
       padding:0px;
       position: relative;
+      border-right:1px #ccc solid;
       & p{
-        height: 30px;
-        width: 30px;
+        height: 35px;
+        width: 35px;
         position: absolute;
       }
       .play{
@@ -44,27 +49,32 @@
     .scrubber{
       background: #5a5a5a;
       width: 52vw;
-      height: 15px;
+      height: 18px;
       margin: 7px;
+      margin-left:14px;
+      border-top: 0px solid #000;
       .progress{
-        height: 15px;
+        height: 18px;
         width: 0px;
-        background: rgb(98, 140, 255);
+        background-color: #7388ff;
+        background-image: repeating-linear-gradient(35deg,
+        #e7e7e7, #e7e7e7 3px,transparent 0, transparent 7px);
       }
       .loaded{
-        height: 15px;
-        background: #fff;
+        height: 18px;
+        background: rgb(230, 230, 230);
         width: 140px;
       }
     }
     .time{
       float: left;
-      height: 30px;
-      line-height: 30px;
+      height: 35px;
+      line-height: 35px;
       padding:0px 0px 0px 15px;
       color:black;
-      text-shadow:0px 0px 0px #000000;
+      text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff;
       font-size:14px;
+      border-left:1px #ccc solid;
       .played{
         color:black;
       }
@@ -73,8 +83,8 @@
       }
     }
     .error-message{
-      height: 30px;
-      line-height: 30px;
+      height: 35px;
+      line-height: 35px;
     }
   }
 }
