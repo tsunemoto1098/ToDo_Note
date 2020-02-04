@@ -11,10 +11,23 @@
         = f.label "ノート名(10文字まで)"
       .note_group_content_field_name_input
         = f.text_field :name, class: 'note_group_content_field_name_input_text', placeholder: 'ノート名を入力', autocomplete: "off"
+    .note_group_content_field_search.clearfix
+      %input#user-search-field.note_group_content_field_search_input{placeholder: "追加ユーザー検索", type: "text", autocomplete: "off"}/
+      #user-search-result
     .note_group_content_field_member
-      .note_group_content_field_member_label
-        = f.label "追加メンバー"
-      .note_group_content_field_member_check
-        = f.collection_check_boxes :user_ids, User.all, :id, :name
+      参加メンバー
+      #group_users.js-add-user
+        .group_user.clearfix.js-chat-member#group_user-8
+          %input{name: "group[user_ids][]", type: "hidden", value: current_user.id}
+          %p.group_user_name= current_user.name
+        - group.users.each do |user|
+          - if current_user.name != user.name
+            .group_user.clearfix.js-chat-member
+              %input{name: "group[user_ids][]", type: "hidden", value: user.id}
+              %p.group_user_name
+                = user.name 
+              %a.user-search-remove.group_user_btn.group_user_btn_remove.js-remove-btn
+                解除
+
     .note_group_content_field_btn
       = f.submit "登録", class: 'note_group_content_field_btn_text'

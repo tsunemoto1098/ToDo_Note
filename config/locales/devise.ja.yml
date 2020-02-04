@@ -23,6 +23,12 @@ ja:
               confirmation: "が内容とあっていません。"
             password_confirmation:
               confirmation: "が一致しません"
+        group:
+          attributes:
+            name:
+              blank: "が入力されていません。"
+              too_short: "は1文字以上10文字以下に設定してください"
+
     attributes:
       user:
         current_password: "現在のパスワード"

@@ -45,14 +45,22 @@
           }
         }
       }
+      &_search{
+        &_input{
+          height: 50px;
+          width: 300px;
+          border-radius: 4px;
+          font-size:14px;
+          padding-left:10px;
+          outline: none;
+          border:2px #e2e2e2 solid;
+          &:focus{
+            border-color: rgba(51, 51, 187, 0.534);
+          }
+        }
+      }
       &_member{
-        margin-bottom:25px;
-        &_label{
-          margin-bottom:5px;
-        }
-        &_check{
-
-        }
+        margin-top:25px;
       }
       &_btn{
         &_text{
@@ -78,6 +86,35 @@
           }
         }
       }
+    }
+  }
+}
+#group_users{
+  overflow: scroll;
+  max-height: 270px;
+}
+.group_user {
+  padding: 0 15px;
+  line-height: 50px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  &_name {
+    float: left;
+  }
+  &_btn {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    &_add {
+      color: #38aef0;
+    }
+    &_remove {
+      color: #f05050;
     }
   }
 }
