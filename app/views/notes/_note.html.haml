@@ -1,26 +1,26 @@
 .note_list_content{"data-note-id": "#{note.id}"}
   .note_list_content_left
+    .note_list_content_left_date
+      - if note.scheduled_date.present?
+        %span.note_list_content_left_date_date
+          .note_list_content_left_date_date_text
+            = note.scheduled_date.strftime("%Y/%m/%d")
+      - if note.scheduled_time.present?
+        .note_list_content_left_time
+          %span.note_list_content_left_time_text
+            %i.fas.fa-hourglass-half
+            %span.time_display
+              = note.scheduled_time
+              %span.time_display_text
+                時
+          - if note.scheduled_minute.present?
+            %span.time_display
+              = note.scheduled_minute
+              %span.time_display_text
+                分
     .note_list_content_left_text
-      .note_list_content_left_text_date
-        %span.note_list_content_left_text_date_date
-          .note_list_content_left_text_date_date_text
-            - if note.scheduled_date.present?
-              = note.scheduled_date.strftime("%Y/%m/%d") + "　"
-        .note_list_content_left_text_date_time
-          %span.note_list_content_left_text_date_time_text
-            - if note.scheduled_time.present?
-              %span.time_display
-                = note.scheduled_time
-                %span.time_display_text
-                  時
-            - if note.scheduled_minute.present?
-              %span.time_display
-                = note.scheduled_minute
-                %span.time_display_text
-                  分
-      .note_list_content_left_text_text
-        - if note.text.present?
-          = note.text
+      - if note.text.present?
+        = note.text
     .note_list_content_right_name_image
       = image_tag note.image.url if note.image.present?
   .note_list_content_right

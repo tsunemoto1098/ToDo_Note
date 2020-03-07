@@ -48,10 +48,12 @@ ToDo管理 + チャット + 音楽
 
 
 ## groupsテーブル
-|Column  |Type   |Options|
-|--------|-------|-------|
-|id      |integer|null: false, foreign_key: true|
-|name    |string |null: false|
+|Column    |Type   |Options|
+|----------|-------|-------|
+|id        |integer|null: false, foreign_key: true|
+|name      |string |null: false|
+|created_by|integer|  |
+|updated_by|integer|  |
 ### Association
 - has_many :notes
 - has_many :users, through: :uses_groups
